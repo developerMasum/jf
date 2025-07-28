@@ -1,5 +1,6 @@
 "use client";
 
+import assets from "@/assets";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
@@ -15,7 +16,7 @@ const Banner = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 w-full items-center gap-8 p-8">
         <div>
           <Image
-            src="/grass.jpg"
+            src={assets.banner3}
             alt="Grass"
             width={500}
             height={300}

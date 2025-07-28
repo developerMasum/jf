@@ -1,12 +1,14 @@
 "use client";
 
+import assets from "@/assets";
 import { ShoppingCart, User, Search } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center px-6 md:px-16 py-4 bg-white shadow-md">
+    <nav className="flex justify-between items-center px-6 md:px-16 py-4 bg-white">
+      {/* Left Links */}
       <div className="flex items-center gap-12">
         <Link href="/" className="text-lg font-semibold">
           Home
@@ -22,14 +24,18 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <Image
-        src="/logo.png"
-        alt="JF Logo"
-        width={60}
-        height={60}
-        className="mx-auto"
-      />
+      {/* Center Logo */}
+      <div className="flex justify-center items-center bg-white  shadow-md rounded-full p-2">
+        <Image
+          src={assets.logo}
+          alt="JF Logo"
+          width={90}
+          height={80}
+          className="object-contain"
+        />
+      </div>
 
+      {/* Right Icons */}
       <div className="flex items-center gap-4">
         <Link href="/login" className="text-lg font-semibold">
           Login

@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import Navbar from "@/components/Common/Navbar";
+import AgriculturalProducts from "@/components/Home/AgriculturalProducts";
 import React from "react";
 
 const Home = () => {
@@ -7,6 +8,8 @@ const Home = () => {
     <div>
       <Navbar />
       <Banner />
+      <AgriculturalProducts />
+      <AgriculturalProducts />
     </div>
   );
 };

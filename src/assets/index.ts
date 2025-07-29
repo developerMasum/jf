@@ -9,6 +9,12 @@ import why1 from "./Home/why1.png";
 import why2 from "./Home/why2.png";
 import why3 from "./Home/why3.png";
 import testimonial from "./Home/testimonial.png";
+import location1 from "./Home/Frame.png";
+import location2 from "./Home/Frame-1.png";
+import location3 from "./Home/Frame-2.png";
+import location4 from "./Home/Frame-3.png";
+import location5 from "./Home/Frame-4.png";
+import location6 from "./Home/Frame-6.png";
 
 const assets = {
   logo,
@@ -22,6 +28,12 @@ const assets = {
   why2,
   why3,
   testimonial,
+  location1,
+  location2,
+  location3,
+  location4,
+  location5,
+  location6,
 };
 
 export default assets;

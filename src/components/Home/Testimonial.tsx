@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+
 import Image from "next/image";
 import assets from "@/assets";
 import { FaQuoteLeft } from "react-icons/fa";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const Testimonial = () => {
   return (
@@ -24,7 +24,7 @@ const Testimonial = () => {
         </p>
 
         <div
-          className="relative mt-6 px-6 py-6 rounded-md border-t border-gray-300 flex items-center justify-between"
+          className="relative mt-6 px-6  py-6 rounded-md  flex items-center justify-between"
           style={{
             backgroundImage: `url(${assets.bannerBg.src})`,
             backgroundSize: "cover",
@@ -33,16 +33,17 @@ const Testimonial = () => {
             minHeight: "100px",
           }}
         >
-          <div className="relative z-10 w-full flex items-center justify-between">
-            <span className="font-semibold text-gray-900">
+          <div className="absolute top-0 left-0 w-full h-full bg-gray-50 opacity-50"></div>
+          <div className="relative z-10 w-full flex items-center justify-between ">
+            <span className="font-semibold text-gray-900 text-2xl">
               - Samuel Varughese
             </span>
             <div className="flex items-center gap-3">
               <button className="p-2 bg-white border rounded-full hover:bg-gray-200 transition">
-                <ChevronLeft className="w-4 h-4" />
+                <ArrowLeft className="w-6 h-6" />
               </button>
               <button className="p-2 bg-white border rounded-full hover:bg-gray-200 transition">
-                <ChevronRight className="w-4 h-4" />
+                <ArrowRight className="w-6 h-6" />
               </button>
             </div>
           </div>
